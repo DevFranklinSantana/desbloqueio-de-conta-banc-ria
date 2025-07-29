@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacia Especializada em Desbloqueio de Contas Bancárias</title>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --black: #000000;
+            --white: #FFFFFF;
+            --dark-gray: #222222;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            color: var(--black);
+            background-color: var(--white);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--black);
+            color: var(--gold);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 4px solid var(--gold);
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .slogan {
+            font-style: italic;
+            color: var(--white);
+            font-size: 1rem;
+        }
+        
+        nav {
+            background-color: var(--gold);
+            padding: 0.8rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: var(--black);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--white);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1575505586569-646b2ca898fc');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            color: var(--gold);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 700px;
+            margin: 0 auto 2.0rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--black);
+            padding: 0.7rem 1.7rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s;
+            border: 2px solid var(--gold);
+        }
+        
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--gold);
+        }
+        
+        .video-container {
+            background-color: var(--dark-gray);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        
+        .video-container h2 {
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 40%; /* Reduzido para proporção menor */
+            height: 0;
+            overflow: hidden;
+            max-width: 600px; /* Reduzido de 800px */
+            margin: 0 auto;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--gold);
+        }
+        
+        .services {
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        .services h2 {
+            color: var(--black);
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border: 1px solid var(--gold);
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .service-card h3 {
+            color: var(--gold);
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+        
+        .service-card p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        footer {
+            background-color: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            margin-bottom: 1.2rem;
+        }
+        
+        .contact-info p {
+            margin: 0.3rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .social-links {
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            color: var(--gold);
+            margin: 0 0.4rem;
+            font-size: 1.3rem;
+            text-decoration: none;
+        }
+
+        /* Estilos adicionados para acessibilidade */
+        a:focus, button:focus {
+            outline: 3px solid var(--gold);
+            outline-offset: 2px;
+        }
+
+        iframe {
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1.2rem 0;
+            }
+            
+            .logo {
+                font-size: 1.7rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.4rem 0;
+            }
+            
+                        
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .hero p {
+                font-size: 2.5rem;
+            }
+            .video-wrapper {
+                max-width: 70%;
+            }
+            
+            .service-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">FM ADVOCACIA</div>
+        <div class="slogan">Soluções jurídicas para liberação de seus recursos</div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#video">Como Funciona</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <h1>Desbloqueio de Contas Bancárias com Agilidade e Segurança</h1>
+        <p>Seu dinheiro bloqueado pode ser liberado judicialmente.Nossa equipe especializada pode lhe ajudar!</p>
+        <a href="https://wa.me/5579999102716" class="cta-button" target="_blank">FALE CONOSCO AGORA</a>
+    </section>
+    
+    <section id="servicos" class="services">
+        <h2>Nossos Serviços Especializados</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Desbloqueio Judicial de Contas</h3>
+                <p>Ação rápida para liberação de saldos bloqueados por bancos sem justificativa legal.</p>
+            </div>
+            <div class="service-card">
+                <h3>Recuperação de Valores Retidos</h3>
+                <p>Atuamos na restituição de valores indevidamente retidos por instituições financeiras.</p>
+            </div>
+            <div class="service-card">
+                <h3>Defesa em Processos Bancários</h3>
+                <p>Representação jurídica em ações movidas por bancos contra correntistas.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="video" class="video-container">
+        <h2>Entenda Como Funciona o Processo</h2>
+        <div class="video-wrapper">
+            <iframe 
+                src="https://youtube.com/embed/YcRi9siWxrg" 
+                title="Processo de desbloqueio de contas bancárias"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    
+    <footer id="contato">
+        <div class="contact-info">
+            <h3>Contato</h3>
+            <p>Av. Dr. José Machado de Souza, 120, Jardins - Aracaju(SE) - Brasil</p>
+            <p>Telefone: <a href="tel:+5579999102716">(79) 99910-2716</a></p>
+            <p>Email: <a href="mailto:adv.franklinsdm@gmail.com">adv.franklinsdm@gmail.com</a></p>
+        </div>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="https://instagram.com/advogado.aracaju.inss" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="https://wa.me/5579999102716" aria-label="WhatsApp">💬</a>
+        </div>
+        <p>&copy; 2025 FM Advocacia - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
